@@ -1,13 +1,10 @@
-from os.path import exists
-from CSV_creating import creating
-from file_writing import writing_scv
-from file_writing import writing_txt
+import view
 
+view.print_title()
 
-path = 'personal.csv'
-valid = exists(path)
-if not valid:
-    creating()
+for k in view.menu_item():
+    print(k, view.menu_item()[k])
 
-writing_scv()
-writing_txt()
+num_operation = int(input('Введите номер операции: '))
+
+view.choose_operation(num_operation)
