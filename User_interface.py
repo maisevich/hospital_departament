@@ -1,4 +1,5 @@
-def get_info ():
+def get_info():
+    print('Новый сотрудник \n')
     info = []
     last_name = input('Фамилия: ')
     info.append(last_name)
