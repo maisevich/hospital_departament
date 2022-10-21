@@ -1,3 +1,6 @@
+import logger as log
+
+
 def get_info():
     print('Новый сотрудник \n')
     info = []
@@ -22,4 +25,7 @@ def get_info():
         except:
             print('ID должен состоять из цифр.')
     info.append(id)
+
+    log.add_file(info)
+
     return info

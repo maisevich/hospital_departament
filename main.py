@@ -1,4 +1,5 @@
 import view
+import logger as log
 
 view.print_title()
 
